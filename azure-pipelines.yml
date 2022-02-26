@@ -22,7 +22,7 @@ steps:
 - task: CopyFiles@2
   inputs:
     SourceFolder: './'
-    Contents: 'azuredeploy*.json'
+    Contents: '**'
     TargetFolder: '$(build.artifactStagingDirectory)'
 
 - task: PublishBuildArtifacts@1
